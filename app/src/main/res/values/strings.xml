@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SuperHero</string>
+    <string name="label_name">Name:</string>
+    <string name="label_surname">Surname:</string>
+</resources>
