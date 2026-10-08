@@ -3,4 +3,5 @@
     <string name="app_name">SuperHero</string>
     <string name="Label_name">Nombre:</string>
     <string name="Label_surname">Apellidos:</string>
+    <string name="superhero_image">Imagen Superéroe</string>
 </resources>

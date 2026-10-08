@@ -2,65 +2,47 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/shaClCard"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#CFF6C6C6">
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="10dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="175dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="190dp" />
+    android:background="#CFF6C6C6"
+    android:layout_marginBottom="8dp">
 
     <ImageView
-        android:id="@+id/elsIvFoto"
-        android:layout_width="144dp"
-        android:layout_height="139dp"
-        android:layout_marginStart="16dp"
+        android:id="@+id/shaIvFoto"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_margin="16dp"
         android:clickable="true"
-        android:contentDescription="Fotografia del superheroe"
-        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        android:contentDescription="@string/superhero_image"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
-        android:id="@+id/elsTvNombre"
-        android:layout_width="wrap_content"
+        android:id="@+id/shaTvNombre"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="32dp"
         android:fontFamily="sans-serif"
-        android:text="Nombre del Superheroe"
+        android:paddingHorizontal="8dp"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/elsIvFoto"
-        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/shaIvFoto"
+        app:layout_constraintTop_toTopOf="@+id/shaIvFoto"
+        tools:text="Nombre del Superheroe" />
 
     <TextView
-        android:id="@+id/elsTvDescripcion"
-        android:layout_width="wrap_content"
+        android:id="@+id/shaTvSlug"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:text="Descripcion"
+        android:paddingHorizontal="8dp"
         android:textColor="@color/black"
-        app:layout_constraintStart_toEndOf="@+id/elsIvFoto"
-        app:layout_constraintTop_toBottomOf="@+id/elsTvNombre" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/shaIvFoto"
+        app:layout_constraintTop_toBottomOf="@+id/shaTvNombre"
+        tools:text="Slug" />
 </androidx.constraintlayout.widget.ConstraintLayout>

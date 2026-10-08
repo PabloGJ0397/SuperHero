@@ -40,4 +40,6 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(libs.androidx.junit)
+    // Glide: descarga la imagen de una URL y la pinta en un ImageView (con caché)
+    implementation("com.github.bumptech.glide:glide:4.16.0")
 }
